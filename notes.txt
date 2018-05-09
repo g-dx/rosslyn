@@ -1,0 +1,40 @@
+Dynamic JSON Decoding
+---------------------
+
+http://eagain.net/articles/go-dynamic-json/
+
+Json to Go Struct Converter
+---------------------------
+
+https://mholt.github.io/json-to-go/
+
+Go Websockets
+-------------
+
+https://github.com/gorilla/websocket
+
+Unicode Symbols:
+----------------
+
+http://jrgraphix.net/r/Unicode/2B00-2BFF
+
+Formatting:
+-----------
+
+http://misc.flogisoft.com/bash/tip_colors_and_formatting
+
+Seems to be available on all VTE terminals...
+
+Slack Formatting:
+-----------------
+
+https://api.slack.com/docs/message-formatting
+
+
+// ---------------------------------------------------------------------------------------------------------------------
+
+GO CUI Feature I Want
+- Copy & paste text containing newlines (Yes - but appears to be buggy in the demo)
+- Line-breaking (No)
+- Scrolling of custom widgets (Unsure - scrolling support appears to be based on Origin(..) movement.)
+-

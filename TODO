@@ -1,0 +1,64 @@
+- Fixes/Improvements
+====================
+ -- Correct "out-of-bounds" draws when using Canvas
+ -- Refactor duplicate (& incorrect!) calculations to determine lines required to display a message
+ -- Refactor format parsing to use regexs
+ -- Revisit panic(...)s in the codebase
+ -- Correct & improve colour calculation for user names
+ -- Correct message formatting after message send
+ -- Remove our username from IM list
+ -- Explain when a channel has no messages
+ -- Correct desktop notification "in/from" -> "channel/user" source
+ -- Filter "thread replies" out of the channel for now (Needs
+ -- Channels should maintain a boolean "hasMore" messages to know whether to load more or not
+ -- Read more information from Channel/Group/IM history correctly. Information like edited, reactions, etc is not read...
+ -- Handle "reply" messages to confirm message sent correctly.
+
+- Ideas
+=======
+
+ -- Consider refactoring to use the message JSON returned by Slack directly for rendering...?
+
+- Features
+==========
+ -- Support mark messages as read
+ -- Support multiline message input
+ -- Support message threads
+ -- Support "uploaded file" messages better by adding better formatting
+ -- Support selecting an existing "mpim" channel
+ -- Support a wider array of emoji characters
+ -- Support "up to edit last message" functionality
+ -- Support bot messages
+ -- Support polls
+ -- Support auto-complete for channel selections
+ -- Support auto-complete for user mentions
+ -- Support auto-complete for channel mentions
+ -- Support auto-complete for emojis
+ -- Support keyboard "back/forward" between channels
+ -- Support keyboard opening of links in message list
+ -- Create an icon
+ -- Support desktop menu integration
+ -- Support only one instance running at a time
+ -- Support custom colour profiles
+ -- Support icons for desktop notifications
+ -- Support reconnect behaviour for Slack connection
+ -- Support "connection status" channel from connection to dis/enable sending messages & display status in UI somewhere
+ -- Support a status bar which can display error/information messages
+ -- Support displaying all channels which have new/unread messages on them.
+
+========================================================================================================================
+Done
+
+ -- Correct "edited" messages in the view
+ -- Corrected added new messages to the right channel
+ -- Correct panics when we can't find a channel for a new "message". This happens when we receive a message for "MPIM" messages.
+ -- Only display desktop notifications for appropriate messages
+ -- Correct channels which have no messages
+ -- Correct PgDown so it will move to end of list if the length is not an exact multiple of 10
+ -- Support "user typing" status
+ -- Support displaying user status
+ -- Refactor a "view" interface. Currently two views:
+   * Chat View
+   * Channel View
+    They should be capable of handling their own keypresses, requesting redraws, etc
+ -- Extract a "Terminal" or "Screen" interface to allow testing of Canvas

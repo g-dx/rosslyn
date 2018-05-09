@@ -1,0 +1,10 @@
+[Desktop Entry]
+Categories=Internet;Chat;Slack;
+Comment=A terminal Slack client
+Exec=mate-terminal -e "/home/g-dx/Workspaces/Go/bin/rosslyn" --title=Rosslyn --hide-menubar --window --geometry=100x100
+Hidden=true
+Name=Rosslyn
+StartupWMClass=Rosslyn
+Terminal=true
+Type=Application
+Version=1.0
